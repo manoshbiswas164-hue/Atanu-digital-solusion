@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ATANU DIGITAL MARKETER — Digital marketing solutions to help your business grow online.">
+  <title>ATANU DIGITAL MARKETER | Grow Your Business Online</title>
+  <style>
+    :root{--navy:#101a35;--blue:#4361ee;--cyan:#26c6da;--ink:#18213b;--muted:#64708a;--paper:#f6f8ff;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth;scroll-padding-top:82px}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.6}
+    a{text-decoration:none;color:inherit}.wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:20;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid #e9edfa}
+    .nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-weight:850;letter-spacing:-.6px;color:var(--navy);font-size:17px}.brand span{color:var(--blue)}
+    nav{display:flex;gap:25px;align-items:center;font-size:14px;font-weight:650;color:#46516c}
+    nav a:hover{color:var(--blue)}.menu{display:none;border:0;background:#eef1ff;border-radius:10px;padding:9px 12px;font-size:20px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:12px;background:var(--blue);color:#fff;font-weight:750;border:0;box-shadow:0 10px 25px #4361ee30}
+    .btn:hover{background:#304bd0;transform:translateY(-1px)}.btn.alt{background:#fff;color:var(--navy);box-shadow:none;border:1px solid #dfe5f7}
+    .hero{background:radial-gradient(circle at 85% 20%,#364eae 0,#182951 35%,#101a35 75%);color:#fff;padding:88px 0 92px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:48px}
+    .eyebrow{display:inline-block;color:#b9c8ff;background:#ffffff14;border:1px solid #ffffff25;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
+    h1{font-size:clamp(39px,6vw,66px);line-height:1.06;letter-spacing:-2.5px;margin:20px 0}
+    h1 em{font-style:normal;color:#69e1ec}.hero p{color:#d4dcf4;font-size:17px;max-width:590px;margin:0 0 28px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap}.hero .btn.alt{background:#ffffff12;color:#fff;border-color:#ffffff35}
+    .visual{min-height:330px;position:relative;display:grid;place-items:center}
+    .orb{width:min(330px,75vw);aspect-ratio:1;border-radius:50%;background:linear-gradient(145deg,#6ce6ef,#526cf5 58%,#9b7bff);box-shadow:0 25px 90px #0007;display:grid;place-items:center;position:relative}
+    .orb:before,.orb:after{content:"";position:absolute;border:1px solid #ffffff55;border-radius:50%;inset:-25px}.orb:after{inset:-52px;border-color:#ffffff25}
+    .orb-inner{width:72%;height:72%;border-radius:28%;background:#101a35;display:grid;place-items:center;text-align:center;transform:rotate(-8deg);box-shadow:inset 0 0 35px #ffffff18}
+    .orb-inner strong{font-size:42px;line-height:1;color:#fff}.orb-inner small{color:#8cecf1;font-weight:800;letter-spacing:2px}
+    .float{position:absolute;background:#fff;color:var(--navy);padding:12px 16px;border-radius:14px;font-size:13px;font-weight:800;box-shadow:0 12px 35px #0003}.float.one{top:20px;left:0}.float.two{bottom:22px;right:0}
+    section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.kicker{color:var(--blue);font-size:12px;font-weight:850;letter-spacing:1.5px;text-transform:uppercase}
+    h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1.2px;margin:10px 0 13px;color:var(--navy)}
+    .section-head p,.muted{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+    .about-card{background:linear-gradient(135deg,#edf1ff,#e7fbfc);padding:34px;border-radius:24px;min-height:270px;display:flex;flex-direction:column;justify-content:center}
+    .about-card .big{font-size:54px;font-weight:900;color:var(--blue);line-height:1}.about-card p{color:#45516d}
+    .ticks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}.tick{font-weight:700;font-size:14px}.tick:before{content:"✓";color:#16a6b5;margin-right:8px;font-weight:900}
+    .services{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{background:#fff;border:1px solid #e9edfa;border-radius:18px;padding:25px;box-shadow:0 8px 30px #17255408}
+    .ico{width:48px;height:48px;border-radius:14px;background:#edf1ff;display:grid;place-items:center;font-size:23px;margin-bottom:17px}
+    .card h3{margin:0 0 8px;color:var(--navy);font-size:19px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .process{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}.step{border-left:3px solid var(--cyan);padding:5px 0 5px 18px}.step b{color:var(--blue);font-size:13px;letter-spacing:1px}.step h3{margin:6px 0;color:var(--navy)}
+    .contact{background:var(--navy);color:#fff}.contact .section-head h2{color:#fff}.contact .section-head p{color:#c6d0e9}
+    .contact-box{max-width:760px;margin:auto;background:#ffffff0d;border:1px solid #ffffff22;border-radius:22px;padding:30px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .contact-box p{grid-column:1/-1;color:#d5def3;margin:0}.contact-item{background:#ffffff0d;padding:17px;border-radius:13px}.contact-item small{display:block;color:#9eafd8;margin-bottom:4px}.contact-item strong{word-break:break-word}
+    footer{background:#0b1227;color:#aeb9d5;padding:24px 0;font-size:13px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.nav{height:64px}.menu{display:block}nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;padding:18px 4%;border-bottom:1px solid #e9edfa;flex-direction:column;align-items:flex-start;gap:16px}nav.open{display:flex}.nav>.btn{display:none}.hero{padding:65px 0}.hero-grid,.about-grid{grid-template-columns:1fr}.visual{min-height:280px}.cards{grid-template-columns:1fr}.process{grid-template-columns:1fr}.ticks{grid-template-columns:1fr}.contact-box{grid-template-columns:1fr;padding:22px}.contact-box p{grid-column:auto}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home">ATANU <span>DIGITAL MARKETER</span></a>
+    <button class="menu" aria-label="Open menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Let's Talk</a>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Smart strategy. Stronger growth.</span>
+        <h1>Grow your business <em>online.</em></h1>
+        <p>Welcome to ATANU DIGITAL MARKETER. Practical digital marketing support to help your brand reach more people, build trust and grow online.</p>
+        <div class="hero-actions"><a class="btn" href="#services">Explore Services</a><a class="btn alt" href="#contact">Contact Me</a></div>
+      </div>
+      <div class="visual" aria-label="Digital marketing illustration">
+        <div class="orb"><div class="orb-inner"><div><strong>AD</strong><br><small>GROW ONLINE</small></div></div></div>
+        <div class="float one">✦ Digital Strategy</div><div class="float two">↗ Better Reach</div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <span class="kicker">About</span><h2>Digital growth, made simple.</h2>
+        <p class="muted">ATANU DIGITAL MARKETER is focused on helping businesses build a clear and consistent presence online. From planning to promotion, the goal is to connect your brand with the right audience.</p>
+        <div class="ticks"><div class="tick">Audience-focused ideas</div><div class="tick">Clear communication</div><div class="tick">Creative campaigns</div><div class="tick">Growth-minded approach</div></div>
+      </div>
+      <div class="about-card"><div class="big">01<span style="color:#20b8c8">.</span></div><h3>Make your brand stand out</h3><p>Build awareness, connect with customers and turn online attention into meaningful opportunities.</p></div>
+    </div>
+  </section>
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">What I do</span><h2>Services to move your brand forward</h2><p>Choose the support that fits your business goals.</p></div>
+      <div class="cards">
+        <article class="card"><div class="ico">📱</div><h3>Social Media Marketing</h3><p>Plan engaging content and strengthen your brand presence across social platforms.</p></article>
+        <article class="card"><div class="ico">🎯</div><h3>Facebook & Instagram Ads</h3><p>Reach relevant audiences with campaign planning and thoughtful ad strategy.</p></article>
+        <article class="card"><div class="ico">🔎</div><h3>SEO Support</h3><p>Improve your website's search visibility with useful, search-friendly content ideas.</p></article>
+        <article class="card"><div class="ico">✍️</div><h3>Content Strategy</h3><p>Shape clear messages and content plans that speak to your ideal customers.</p></article>
+        <article class="card"><div class="ico">📈</div><h3>Marketing Strategy</h3><p>Set practical goals, identify opportunities and create a focused action plan.</p></article>
+        <article class="card"><div class="ico">💡</div><h3>Brand Promotion</h3><p>Present your business consistently and help more people discover what you offer.</p></article>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="wrap">
+      <div class="section-head"><span class="kicker">How it works</span><h2>A simple path to better marketing</h2><p>Start with your goals and build from there.</p></div>
+      <div class="process">
+        <div class="step"><b>STEP 01</b><h3>Understand</h3><p class="muted">Discuss your business, audience and goals.</p></div>
+        <div class="step"><b>STEP 02</b><h3>Plan</h3><p class="muted">Choose the right channels and a practical strategy.</p></div>
+        <div class="step"><b>STEP 03</b><h3>Grow</h3><p class="muted">Launch, learn and improve your digital presence.</p></div>
+      </div>
+    </div>
+  </section>
+  <section class="contact" id="contact">
+    <div class="wrap">
+      <div class="section-head"><span class="kicker" style="color:#7ce5ed">Get in touch</span><h2>Let's grow your business together.</h2><p>Have a project or want to discuss digital marketing? Get in touch.</p></div>
+      <div class="contact-box">
+        <p>Replace the sample contact details below with your real information before sharing your website.</p>
+        <div class="contact-item"><small>Email</small><strong>your-email@example.com</strong></div>
+        <div class="contact-item"><small>WhatsApp</small><strong>+880 1XXXXXXXXX</strong></div>
+        <div class="contact-item"><small>Facebook</small><strong>facebook.com/your-page</strong></div>
+        <div class="contact-item"><small>Location</small><strong>Bangladesh</strong></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="wrap foot"><span>© <span id="year"></span> ATANU DIGITAL MARKETER. All rights reserved.</span><span>Built to help your brand grow online.</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));</script>
+</body>
+</html>
